@@ -12,7 +12,7 @@ const mixin = {
       }
 
       this.widthWindow = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
-      this.widthContainer = this.$refs.list.clientWidth
+      this.widthContainer = this.$refs.list ? this.$refs.list.clientWidth:null;
     },
 
     /**
